@@ -54,9 +54,10 @@
 
       let guessCount = 1;
       let resetButton;
+      guessField.focus();
 
       function checkGuess() {
-        let userGuess = Number(guessField.Value);
+        let userGuess = Number(guessField.value);
         if (guessCount === 1) {
           guesses.textContent = '前回の予想: ';
         }
